@@ -22,14 +22,14 @@ There are two ways to setup this Sim: Docker + Locally
 ```bash
 sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
 sudo apt-get update
-sudp apt-get install mosquitto
+sudo apt-get install mosquitto
 ```
 
 2. Start the Mosquitto broker:
 
 ```bash
-sudo systemctl enable Mosquitto
-sudo systemctl start Mosquitto
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
 ```
 
 3. Clone this repo to your local system:
@@ -47,7 +47,7 @@ cd mqtt-emergency-generator/tree/master/generator_simulator
 5. Install the pip requirements
 
 ```bash
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
+python3 -m pip install --no-cache-dir -r requirements.txt
 ```
 
 6. Setup your enviroment variables
